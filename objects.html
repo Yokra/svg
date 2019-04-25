@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Objects</title>
+    <style>
+      #a,
+      #b,
+      #c,
+      #d {
+        animation: blink 2.5s infinite;
+      }
+
+      @keyframes blink {
+        from {
+          fill: yellow;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      #aa {
+        animation: aa 1.7s infinite;
+      }
+
+      #bb {
+        animation: aa 1.8s infinite;
+      }
+
+      #cc {
+        animation: aa 1.9s infinite;
+      }
+
+      @keyframes aa {
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #aaa {
+        animation: aa 2.2s infinite;
+      }
+
+      #bbb {
+        animation: aa 2.3s infinite;
+      }
+
+      #ccc {
+        animation: aa 2.4s infinite;
+      }
+
+      #ddd {
+        animation: aa 2.5s infinite;
+      }
+
+      #gradient {
+        animation: light 3s infinite;
+        background-color: linear-gradient(to right, #fffc00, #ffffff);
+      }
+
+      @keyframes light {
+        from {
+          fill: #f3f9a75a;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      version="1.1"
+      baseProfile="full"
+      width="1000"
+      height="650"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <!-- House -->
+      <rect x="0" y="0" width="100%" height="100%" fill="green" ; />
+      <rect x="0" y="600" width="100%" height="650" fill="blue" ; />
+      <rect x="100" y="360" width="300" height="240" fill="black" ; />
+      <polygon points="250 150, 430 360, 70 360" fill="yellow" ; />
+
+      <!-- Chimney + Smoke-->
+      <rect x="160" y="210" width="25" height="70" fill="black" ; />
+      <circle id="aaa" cx="163" cy="190" r="10" fill="grey" />
+      <circle id="bbb" cx="157" cy="135" r="15" fill="grey" />
+      <circle id="ccc" cx="160" cy="70" r="25" fill="grey" />
+      <circle id="ddd" cx="210" cy="0" r="40" fill="grey" />
+
+      <!-- Window -->
+
+      <rect id="a" x="340" y="410" width="30" height="30" stroke="yellow" ; />
+      <rect id="b" x="300" y="410" width="30" height="30" stroke="yellow" ; />
+      <rect id="c" x="340" y="450" width="30" height="30" stroke="yellow" ; />
+      <rect id="d" x="300" y="450" width="30" height="30" stroke="yellow" ; />
+
+      <!-- Flower -->
+      <line
+        x1="600"
+        x2="600"
+        y1="600"
+        y2="350"
+        stroke="black"
+        stroke-width="3"
+      />
+
+      <circle cx="563" cy="340" r="30" fill="orange" />
+      <circle cx="580" cy="310" r="30" fill="black" />
+      <circle cx="604" cy="299" r="30" fill="orange" />
+      <circle cx="625" cy="310" r="30" fill="black" />
+      <circle cx="635" cy="335" r="30" fill="orange" />
+      <circle cx="625" cy="360" r="30" fill="black" />
+      <circle cx="605" cy="370" r="30" fill="orange" />
+      <circle cx="584" cy="370" r="30" fill="black" />
+      <circle
+        cx="598"
+        cy="337"
+        r="25"
+        fill="black"
+        stroke="orange"
+        stroke-width="2"
+      />
+      <!-- Car -->
+
+      <rect x="789" y="425" width="140" height="100" fill="red" rx="45" />
+      <rect x="799" y="430" width="120" height="90" fill="green" rx="45" />
+      <rect x="740" y="480" width="230" height="80" fill="red" rx="35" />
+      <line x1="860" x2="860" y1="430" y2="550" stroke="red" stroke-width="5" />
+
+      <!-- Left wheel -->
+      <circle
+        r="30px"
+        fill="black"
+        stroke="green"
+        stroke-width="7"
+        cx="795"
+        cy="567"
+      />
+      <circle r="10px" fill="grey" cx="795" cy="567" />
+
+      <!-- Left wheel -->
+      <circle
+        r="30px"
+        fill="black"
+        stroke="green"
+        stroke-width="7"
+        cx="900"
+        cy="567"
+      />
+      <circle r="10px" fill="grey" cx="900" cy="567" />
+      <!-- back lights -->
+      <circle r="8px" fill="orange" cx="740" cy="510" />
+      <!-- front lights -->
+      <circle r="11px" fill="yellow" cx="965" cy="510" />
+      <!-- car smoke -->
+      <circle id="aa" r="8px" fill="grey" cx="730" cy="530" />
+      <circle id="bb" r="13px" fill="grey" cx="695" cy="520" />
+      <circle id="cc" r="18px" fill="grey" cx="650" cy="500" />
+
+      <!-- UFO -->
+      <path d="M769,110 a60,60 0 1,0 -125,0" />
+      <ellipse cx="710" cy="105" rx="140" ry="20" fill="rgb(32, 32, 30)" />
+      <polygon id="gradient" points="700,110 710,490 450,450" fill="none" />
+    </svg>
+
+    <audio controls>
+        <source src="ufo.mp3"></source>
+    </audio>
+  </body>
+</html>
